@@ -1,0 +1,12 @@
+<div class="root">
+    <h1>{{myProduct.title}}</h1>
+    <img [src]="myProduct.imageUrl"/>
+    <p>{{myProduct.description}}</p>
+    <div class="price-likes">
+    <b>{{myProduct.price}} €</b>    
+    <p>
+        <b>{{myProduct.likes}} 👍 </b>
+        <button (click)="onLike()">{{myProduct.isLiked ? 'unlike' : 'like'}}</button>
+    </p>
+    </div>
+</div>

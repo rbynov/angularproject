@@ -1,0 +1,9 @@
+<div style="text-align:center">
+<h1>
+    Welcome to {{title}} !
+</h1>
+<img width="300" alt="LOL Logo" src="../../assets/LOL.png">
+</div>
+<div class="products">
+    <app-product-card *ngFor="let product of products" [myProduct]="product"></app-product-card>
+</div>
